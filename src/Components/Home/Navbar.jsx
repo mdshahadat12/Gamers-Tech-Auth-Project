@@ -4,6 +4,7 @@ import user from "../../assets/Logo.png"
 import { useState } from "react";
 
 const Navbar = () => {
+  const user1 = false
   const [click,setClick] = useState(false);
 
   const hndleClick = () =>{
@@ -23,7 +24,10 @@ const Navbar = () => {
           </span>
         </Link>
         <div className="flex items-center md:order-2">
-          <button
+
+
+          {
+            user1 ? <button
             onClick={hndleClick}
             type="button"
             className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
@@ -35,9 +39,14 @@ const Navbar = () => {
               alt="user photo"
             />
           </button>
+          :
+          <Link to={"login"}><button className="py-2 px-4 rounded-lg bg-green-600">Login</button></Link>
+          }
+
+
           {/* <!-- Dropdown menu --> */}
           <div
-            className={`z-50 absolute ${click? "top-12": "-top-96"} duration-100 top-10 right-4 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600`}
+            className={`z-50 absolute ${click? "top-12": "-top-96"} duration-100 right-4 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600`}
           >
             <div className="px-4 py-3">
               <span className="block text-sm text-gray-900 dark:text-white">
