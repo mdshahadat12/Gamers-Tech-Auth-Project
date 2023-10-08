@@ -4,14 +4,14 @@ import image from "../../assets/side-view-gamer-playing-with-controller.jpg";
 const CardDatails = () => {
   const { id } = useParams();
   return (
-    <div>
-      <div className="grid my-10 grid-cols-6">
+    <div className="mb-20">
+      <div className="grid my-20 grid-cols-6">
         <div className="col-span-2 flex flex-col space-y-4 justify-center items-center">
           <h2 className="text-xl">Time: 02/04/2003</h2>
           <h2>Vanue: Sherpur, Bogura</h2>
           <h1>Organise By: Shahadat {id}</h1>
           <button
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+            className="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
           >
             Book Now
           </button>

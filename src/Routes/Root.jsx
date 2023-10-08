@@ -41,7 +41,7 @@ const Router = createBrowserRouter([
             },
             {
                 path:"/details/:id",
-                element:<CardDatails></CardDatails>
+                element: <PrivetRoute><CardDatails></CardDatails></PrivetRoute>
             }
         ]
     }

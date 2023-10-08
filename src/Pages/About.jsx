@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <div>
+        <div className="h-screen">
             This is About page
         </div>
     );
