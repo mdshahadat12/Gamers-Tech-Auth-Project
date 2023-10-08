@@ -1,14 +1,17 @@
+import { useContext } from "react";
 import ProfilePic from "../assets/Logo.png";
+import { AuthContext } from "../Context/AuthProvider";
 
 const Profile = () => {
+    const {user}=useContext(AuthContext)
     return (
-        <div className="h-[80vh]">
-            <div><img className="h-[150px] w-[150px] rounded-full mx-auto my-10" src={ProfilePic} alt="" /></div>
-            <h1 className="text-center text-xl font-semibold">Name: Md Shahadat</h1>
+        <div className="my-10">
+            <div><img className="h-[150px] w-[150px] rounded-full mx-auto my-10" src={user?.photoURL?user?.photoURL:ProfilePic} alt="" /></div>
+            <h1 className="text-center text-xl font-semibold">Name: {user?.displayName}</h1>
             <div className="grid grid-cols-2 my-10">
                 <div className="px-20">
                     <h2 className="text-left">E-mail</h2>
-                    <h2 className="text-right">mdsadt2@gmail.com</h2>
+                    <h2 className="text-right">{user?.email}</h2>
                     <hr />
                     <h2 className="text-left">Country</h2>
                     <h2 className="text-right">Bangladesh</h2>
