@@ -2,7 +2,7 @@
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className="h-[80vh]">
             dashboard page
         </div>
     );
