@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 const Card = ({data}) => {
   const {id,title,img,description} = data ||{};
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow">
+    <div data-aos="flip-left">
+      <div className="bg-white border border-gray-200 rounded-lg shadow">
         <img className="rounded-t-lg w-full" src={img} alt="" />
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight">
@@ -33,6 +34,8 @@ const Card = ({data}) => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 

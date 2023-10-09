@@ -5,7 +5,8 @@ import { AuthContext } from "../Context/AuthProvider";
 const Profile = () => {
     const {user}=useContext(AuthContext)
     return (
-        <div className="my-10">
+        <div data-aos="zoom-in-down">
+            <div className="my-10">
             <div><img className="h-[150px] w-[150px] rounded-full ring-4 ring-gray-400 mx-auto my-10" src={user?.photoURL?user?.photoURL:ProfilePic} alt="" /></div>
             <h1 className="text-center text-xl font-semibold">Name: {user?.displayName}</h1>
             <div className="grid grid-cols-2 my-10">
@@ -30,6 +31,8 @@ const Profile = () => {
                 </div>
             </div>
         </div>
+        </div>
+        
     );
 };
 

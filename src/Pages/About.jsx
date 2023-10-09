@@ -1,7 +1,8 @@
 
 const About = () => {
     return (
-        <div className="mb-32 mt-16">
+        <div data-aos="flip-up">
+            <div className="mb-32 mt-16">
             <h1 className="text-2xl text-center font-bold my-10">What We Are?</h1>
 
             <p className="mb-12 text-gray-700">Welcome to Gamers Tech, your ultimate destination for cutting-edge gaming technology and innovation. Dive into a world where pixels and processors meet passion and play. <br /> <br />
@@ -18,6 +19,8 @@ So, whether you are a PC gamer, console enthusiast, or mobile gaming aficionado,
 <br /> <br />
 Ready to embark on your gaming journey? Start exploring our extensive catalog and immerse yourself in the world of gaming tech like never before. Lets game together, and lets game better, only at Gamers Tech.</p>
         </div>
+        </div>
+        
     );
 };
 

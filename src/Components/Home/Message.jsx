@@ -1,7 +1,8 @@
 
 const Message = () => {
     return (
-        <div>
+        <div data-aos="zoom-in">
+            <div>
             <div className="md:w-1/2 my-10 mx-auto">
                 <h1 className="text-2xl text-center font-bold my-10">Contact Us</h1>
                 <form action="">
@@ -15,6 +16,8 @@ const Message = () => {
                 </form>
             </div>
         </div>
+        </div>
+        
     );
 };
 
