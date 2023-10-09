@@ -188,7 +188,7 @@ const Navbar = () => {
                     : "block py-2 pl-3 pr-4 text-gray-900 rounded"
                 }
               >
-                Contract Us
+                Contact Us
               </NavLink>
             </li>
           </ul>

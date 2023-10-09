@@ -8,7 +8,7 @@ const CardDatails = () => {
 
   const [cardData, setCardData] = useState([])
 
-  const {img,title,time,venue,location,description}=cardData||{};
+  const {img,title,time,creator_name,venue,location,description}=cardData||{};
     useEffect(()=>{
         fetch("/game.json")
         .then(res=>res.json())
@@ -73,7 +73,7 @@ const CardDatails = () => {
           <h2 className="text-xl">Time: {time}</h2>
           <h2>Vanue: {venue}</h2>
           <h2>Location: {location}</h2>
-          <h1>Organise By: Shahadat {id}</h1>
+          <h1>Organise By: {creator_name}</h1>
           <button
           onClick={handleClick}
             className="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"

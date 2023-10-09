@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>variable Name id wrong thats why ans is A</i>
 
 </p>
 </details>
@@ -45,7 +45,7 @@ sum(1, "2");
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Answer is C here 2 is string thats why answer String</i>
 
 </p>
 </details>
@@ -71,7 +71,7 @@ console.log(food);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Hare answer will be B because info.favoriteFood equal to 0 index of food</i>
 
 </p>
 </details>
@@ -96,7 +96,7 @@ console.log(sayHi());
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>The answer is B Because there is value pass by function, name is undefined</i>
 
 </p>
 </details>
@@ -124,7 +124,7 @@ console.log(count);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Answer is C hare array element number is 4 but first value is 0 that is false value thats why first element not count</i>
 
 </p>
 </details>
