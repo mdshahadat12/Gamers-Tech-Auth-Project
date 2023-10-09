@@ -12,7 +12,7 @@ AOS.init();
 const Home = () => {
     return (
         <div>
-            <div className="w-full" data-aos="fade-up"><Banner></Banner></div>
+            <Banner></Banner>
             <h1 className="text-2xl text-center font-bold">Our Running Events</h1>
             <CardContainer></CardContainer>
             <h1 className="text-2xl text-center font-bold">Our Upcomming Events</h1>
