@@ -1,11 +1,37 @@
-import banner from "../../assets/gtech.jpg"
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const Banner = () => {
-    return (
-        <div className='bg-gray-500 text-center my-10 rounded-xl h-[70vh]'>
-        <img className="h-[70vh] w-full rounded-xl" src={banner} alt="" />
-        </div>
-    );
-};
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./style.css";
 
-export default Banner;
+// my import
+import img from "../../assets/side-view-gamer-playing-with-controller.jpg";
+
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
+
+export default function Banner() {
+  return (
+    <>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide><img className="rounded-xl" src={img} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="rounded-xl" src={img} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="rounded-xl" src={img} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="rounded-xl" src={img} alt="" /></SwiperSlide>
+      </Swiper>
+    </>
+  );
+}

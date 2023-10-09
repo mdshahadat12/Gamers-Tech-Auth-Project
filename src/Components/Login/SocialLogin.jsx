@@ -2,14 +2,17 @@ import { FcGoogle } from "react-icons/fc";
 import { AiFillGithub } from "react-icons/ai";
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
     const {signInWithGoogle,signInWithGitHub,setUser} = useContext(AuthContext)
+    const navigate = useNavigate();
     const handleLgin = (logIn) => {
         logIn()
         .then(result=>{
             console.log(result.user)
             setUser(result.user)
+            navigate("/")
         })
         .catch(error=>console.log(error))
     }

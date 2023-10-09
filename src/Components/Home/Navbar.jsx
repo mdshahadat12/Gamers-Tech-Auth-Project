@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to={"/"} className="flex items-center">
           <img src={img} className="h-8 mr-3" />
-          <span className="self-center text-blue-700 text-2xl font-extrabold whitespace-nowrap">
+          <span className="self-center text-blue-500 text-2xl font-extrabold whitespace-nowrap">
             Gamers Tech
           </span>
         </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
             </button>
           ) : (
             <NavLink to={"login"}>
-              <button className="py-2 px-4 rounded-lg text-white bg-blue-700">
+              <button className="py-2 px-4 rounded-lg text-white font-bold bg-blue-500">
                 Login
               </button>
             </NavLink>

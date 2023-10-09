@@ -1,18 +1,22 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 import SocialLogin from "../Components/Login/SocialLogin";
 
 const Registration = () => {
 
     const {signupWithEmail} = useContext(AuthContext);
+    const navigate = useNavigate()
 
     const handleSubmit= (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         signupWithEmail(email,password)
-        .then(result=>console.log(result.user))
+        .then(result=>{
+          console.log(result.user)
+          navigate("/")
+        })
         .catch(error=>console.log(error))
         
     }
