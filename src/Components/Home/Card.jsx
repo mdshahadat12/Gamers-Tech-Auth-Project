@@ -1,27 +1,25 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import image from "../../assets/cardim.jpeg";
 
-const Card = () => {
+const Card = ({data}) => {
+  const {id,title,img,description} = data ||{};
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow">
-      <a href="#">
-        <img className="rounded-t-lg w-full" src={image} alt="" />
-      </a>
+        <img className="rounded-t-lg w-full" src={img} alt="" />
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight">
-          Noteworthy technology acquisitions 2021
+          {title}
         </h5>
 
         <p className="mb-3 font-normal text-gray-700">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
+         {description.slice(0,150)}...
         </p>
         <div className="flex justify-center">
           <Link
-            to={"/details/05"}
+            to={`/details/${id}`}
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
           >
-            Read more
+            Know more
             <svg
               className="w-3.5 h-3.5 ml-2"
               aria-hidden="true"

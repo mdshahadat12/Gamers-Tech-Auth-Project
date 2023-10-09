@@ -8,12 +8,15 @@ import Profile from "../Pages/Profile";
 import Dashboard from "../Pages/Dashboard";
 import CardDatails from "../Components/CardDetails/CardDatails";
 import PrivetRoute from "./PrivetRoute";
+import Erorr from "../Pages/Erorr";
+import Message from "../Components/Home/Message";
 
 
 const Router = createBrowserRouter([
     {
         path: "/",
         element:<Layout></Layout>,
+        errorElement:<Erorr></Erorr>,
         children:[
             {
                 path:"/",
@@ -38,6 +41,10 @@ const Router = createBrowserRouter([
             {
                 path:"/about",
                 element:<About></About>
+            },
+            {
+                path:"/contact",
+                element:<Message></Message>
             },
             {
                 path:"/details/:id",

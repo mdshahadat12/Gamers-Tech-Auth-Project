@@ -1,30 +1,36 @@
 [
     {
       "id": 1,
-      "title": "Sample Event 1",
-      "img": "event1.jpg",
+      "title": "PUBG Tournament in  BD",
+      "img": "https://i.ibb.co/cYdvY4T/cardim.jpg",
       "time": "2023-10-15 09:00 AM",
-      "venue": "Conference Hall A",
-      "creator-name": "John Doe",
-      "running": true
+      "venue": "Conference Hall In Dhaka",
+      "creator-name": "Md Shahadat",
+      "running": true,
+      "location": "Sherpur, Bogura, Bangladesh",
+      "description": "Prepare for an adrenaline-pumping gaming extravaganza like never before! Get ready to drop into the battlegrounds and conquer your foes in the most thrilling PlayerUnknown's Battlegrounds (PUBG) tournament to hit Bangladesh! Our tournament features a challenging format designed to test the skills of the best PUBG players in Bangladesh. With competitive squad and solo matches, teams and solo players will battle it out for supremacy. Expect intense firefights, epic strategies, and heart-pounding moments. The stakes are high, and the rewards are even higher! Win big with generous cash prizes for the top contenders. There's no better motivation to bring your A-game and claim victory."
     },
     {
       "id": 2,
-      "title": "Awesome Conference",
-      "img": "conference.jpg",
-      "time": "2023-11-05 10:30 AM",
-      "venue": "Grand Ballroom",
-      "creator-name": "Jane Smith",
-      "running": false
+      "title": "PUBG Tournament in  BD",
+      "img": "https://i.ibb.co/cYdvY4T/cardim.jpg",
+      "time": "2023-10-15 09:00 AM",
+      "venue": "Conference Hall In Dhaka",
+      "creator-name": "Md Shahadat",
+      "running": true,
+      "location": "Sherpur, Bogura, Bangladesh",
+      "description": "Prepare for an adrenaline-pumping gaming extravaganza like never before! Get ready to drop into the battlegrounds and conquer your foes in the most thrilling PlayerUnknown's Battlegrounds (PUBG) tournament to hit Bangladesh! Our tournament features a challenging format designed to test the skills of the best PUBG players in Bangladesh. With competitive squad and solo matches, teams and solo players will battle it out for supremacy. Expect intense firefights, epic strategies, and heart-pounding moments. The stakes are high, and the rewards are even higher! Win big with generous cash prizes for the top contenders. There's no better motivation to bring your A-game and claim victory."
     },
     {
       "id": 3,
-      "title": "Music Festival",
-      "img": "musicfest.jpg",
-      "time": "2023-12-20 06:00 PM",
-      "venue": "Outdoor Stadium",
-      "creator-name": "Mike Johnson",
-      "running": true
+      "title": "PUBG Tournament in  BD",
+      "img": "https://i.ibb.co/cYdvY4T/cardim.jpg",
+      "time": "2023-10-15 09:00 AM",
+      "venue": "Conference Hall In Dhaka",
+      "creator-name": "Md Shahadat",
+      "running": true,
+      "location": "Sherpur, Bogura, Bangladesh",
+      "description": "Prepare for an adrenaline-pumping gaming extravaganza like never before! Get ready to drop into the battlegrounds and conquer your foes in the most thrilling PlayerUnknown's Battlegrounds (PUBG) tournament to hit Bangladesh! Our tournament features a challenging format designed to test the skills of the best PUBG players in Bangladesh. With competitive squad and solo matches, teams and solo players will battle it out for supremacy. Expect intense firefights, epic strategies, and heart-pounding moments. The stakes are high, and the rewards are even higher! Win big with generous cash prizes for the top contenders. There's no better motivation to bring your A-game and claim victory."
     }
   ]
   

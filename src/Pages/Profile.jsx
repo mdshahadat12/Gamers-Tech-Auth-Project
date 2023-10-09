@@ -13,23 +13,20 @@ const Profile = () => {
                     <h2 className="text-left">E-mail</h2>
                     <h2 className="text-right">{user?.email?user?.email:"E-imail@mail.com"}</h2>
                     <hr />
-                    <h2 className="text-left">Country</h2>
-                    <h2 className="text-right">Bangladesh</h2>
+                    <h2 className="text-left mt-5">Country</h2>
+                    <h2 className="text-right mb-5">Bangladesh</h2>
                     <hr />
                     <h2 className="text-left">Phone</h2>
-                    <h2 className="text-right">+8801738915326</h2>
+                    <h2 className="text-right">+88017xxxxxxxx</h2>
                     
                 </div>
                 <div className="px-20">
                     <h2 className="text-left">Address</h2>
-                    <h2 className="text-right">Sherpur, Bogura, Bangladesh</h2>
+                    <h2 className="text-right">Dhaka, Bangladesh</h2>
                     <hr />
-                    <h2 className="text-left">Date of Birth</h2>
-                    <h2 className="text-right">25-02-2003</h2>
-                    <hr />
-                    <h2 className="text-left">Phone</h2>
-                    <h2 className="text-right">+8801738915326</h2>
-                    
+                    <h2 className="text-left mt-5">Date of Birth</h2>
+                    <h2 className="text-right mb-5">None</h2>
+                    <hr />                    
                 </div>
             </div>
         </div>

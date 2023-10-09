@@ -15,7 +15,7 @@ import { Pagination, Navigation } from "swiper/modules";
 
 export default function Banner() {
   return (
-    <>
+    <div className="my-16">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -32,6 +32,6 @@ export default function Banner() {
         <SwiperSlide><img className="rounded-xl" src={img} alt="" /></SwiperSlide>
         <SwiperSlide><img className="rounded-xl" src={img} alt="" /></SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

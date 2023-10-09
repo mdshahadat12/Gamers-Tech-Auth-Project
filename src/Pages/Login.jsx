@@ -3,6 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 import SocialLogin from "../Components/Login/SocialLogin";
 
+import { ToastContainer, Zoom, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Login = () => {
     const {signInWithEmail,setUser} = useContext(AuthContext);
     const navigate = useNavigate()
@@ -11,24 +14,63 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+        if(!/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{6,}/.test(password)){
+            return toast.error('Password Should be At lest 6, one Capital and special!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition:Zoom
+                });
+         }
         signInWithEmail(email,password)
         .then(result=>{
+            toast.error('Successfully LogIn', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition:Zoom
+                });
             console.log(result.user)
             setUser(result.user);
             navigate("/")
         })
-        .catch(error=>console.log(error))
+        .catch(error=>{
+            const Emessage = error.message =="Firebase: Error (auth/invalid-login-credentials)." ? "Your E-mail or Password incorrect": error.message;
+            toast.error(Emessage, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition:Zoom
+                });
+            console.log(error.message)
+        })
         
         
     }
 
     return (
-        <div className="relative flex w-1/2 mx-auto my-20 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex md:w-1/2 mx-auto my-20 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
             <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-tr from-blue-600 to-blue-400 bg-clip-border text-white shadow-lg shadow-blue-500/40">
                 <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
                     Log In
                 </h3>
             </div>
+            <ToastContainer />
             <form onSubmit={handleSubmit}>
             <div className="flex flex-col gap-4 p-6">
                 <div className="relative h-11 w-full min-w-[200px]">

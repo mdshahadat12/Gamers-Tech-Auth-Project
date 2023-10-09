@@ -9,6 +9,7 @@ import { auth } from "../../../firebase/firebase.config";
 const Navbar = () => {
   const { user, setUser } = useContext(AuthContext);
   const [click, setClick] = useState(false);
+  const [clickb, setClickb] = useState(false)
 
   const hndleClick = () => {
     setClick(!click);
@@ -24,6 +25,10 @@ const Navbar = () => {
         console.log(error.massage);
       });
   };
+
+  const toggleNav =()=>{
+    setClickb(!clickb)
+  }
 
   return (
     <nav className="bg-white border-gray-200 relative dark:bg-gray-900">
@@ -91,6 +96,7 @@ const Navbar = () => {
             </ul>
           </div>
           <button
+            onClick={toggleNav}
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
@@ -107,7 +113,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          className={`${clickb? '': 'hidden'} w-full md:block md:w-auto`}
           id="navbar-user"
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -169,6 +175,20 @@ const Navbar = () => {
                 }
               >
                 About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/contact"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-blue-700 underline block py-2 pl-3 pr-4"
+                    : "block py-2 pl-3 pr-4 text-gray-900 rounded"
+                }
+              >
+                Contract Us
               </NavLink>
             </li>
           </ul>
