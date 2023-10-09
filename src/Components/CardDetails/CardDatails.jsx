@@ -68,8 +68,8 @@ const CardDatails = () => {
   }
   return (
     <div className="mb-20">
-      <div className="grid my-20 grid-cols-6">
-        <div className="col-span-2 flex flex-col space-y-4 justify-center items-center">
+      <div className="grid my-20 md:grid-cols-6">
+        <div className="md:col-span-2 flex flex-col space-y-4 justify-center items-center">
           <h2 className="text-xl">Time: {time}</h2>
           <h2>Vanue: {venue}</h2>
           <h2>Location: {location}</h2>
@@ -83,7 +83,7 @@ const CardDatails = () => {
         </div>
         
 
-        <div className="col-span-4">
+        <div className="md:col-span-4 mt-5">
         <ToastContainer />
           <img className="h-[450px] w-full rounded-xl" src={img} alt="" />
         </div>

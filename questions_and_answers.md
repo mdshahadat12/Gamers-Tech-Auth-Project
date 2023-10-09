@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: ?
 
-<i>variable Name id wrong thats why ans is A</i>
+<i>variable Name is wrong thats why answer is A</i>
 
 </p>
 </details>
@@ -96,7 +96,7 @@ console.log(sayHi());
 
 #### Answer: ?
 
-<i>The answer is B Because there is value pass by function, name is undefined</i>
+<i>The answer is B Because there is value no pass by function, name is undefined</i>
 
 </p>
 </details>
@@ -124,7 +124,7 @@ console.log(count);
 
 #### Answer: ?
 
-<i>Answer is C hare array element number is 4 but first value is 0 that is false value thats why first element not count</i>
+<i>Answer is C hare array element number is 4 but first element is 0 that is false value thats why first element not count</i>
 
 </p>
 </details>
